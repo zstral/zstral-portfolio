@@ -15,11 +15,10 @@ export const tabs = [
         <>
         <Header>
             <ProfilePicture />
-            <Card title='Rafael Fernández G.' text='Desarrollador Fullstack' width='auto' />
+            <Card title='Rafael Fernández G.' text='Desarrollador Fullstack' width='200px' />
             <Card title='Santiago,' text='CL' icon='south_america' width='150px' />
-            <SwitchButton className='ml-auto'/>
         </Header>
-        <Slides slide={contentTabHome} showTtlIco={true} autoSlide={false} fullwidth={false}/>
+        <SwitchButton className=''/>
         <Slides slide={contentTabHome} showTtlIco={true} autoSlide={false} fullwidth={false}/>
         </>
     )
@@ -30,7 +29,7 @@ export const tabs = [
     icon: 'deployed_code',
     content: (
         <>
-        <Header height="15px">
+        <Header>
             <span className='material-symbols-outlined text-3xl'>deployed_code</span>
             <Card title='Proyectos personales' text='' width='auto' height="70px" bgcolor='none' border='none' ttlSize='1rem' />
         </Header>

@@ -5,7 +5,7 @@ import { TabsProvider } from './context/tabsContext';
 export default function Home() {
   	return (
 		<TabsProvider>
-			<main>
+			<main className="flex flex-col items-center justify-center md:flex-row">
 				<SideBar />
 				<Tabs />
 			</main>

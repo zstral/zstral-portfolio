@@ -2,9 +2,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Switch = ({ className='' }) => {
+const Switch = () => {
   return (
-    <StyledWrapper className={`${className}`}>
+    <StyledWrapper className="ml-0 md:ml-auto">
       <div className="toggle-switch">
         <label className="switch-label">
           <input type="checkbox" className="checkbox"/>
@@ -18,7 +18,7 @@ const Switch = ({ className='' }) => {
 const StyledWrapper = styled.div`
   .toggle-switch {
     position: relative;
-    width: 60px;
+    width: 80px;
     height: 30px;
     --light: #d8dbe0;
     --dark: #28292c;
@@ -29,11 +29,11 @@ const StyledWrapper = styled.div`
   .switch-label {
     position: absolute;
     width: 100%;
-    height: 30px; /* Reducido de 50px */
+    height: 30px;
     background-color: var(--dark);
-    border-radius: 15px; /* Reducido de 25px */
+    border-radius: 15px;
     cursor: pointer;
-    border: 2px solid var(--dark); /* Reducido de 3px para proporción */
+    border: 2px solid var(--dark);
   }
 
   .checkbox {
@@ -45,7 +45,7 @@ const StyledWrapper = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 15px; /* Reducido de 25px */
+    border-radius: 15px;
     transition: 0.3s;
   }
 
@@ -67,7 +67,7 @@ const StyledWrapper = styled.div`
   }
 
   .checkbox:checked ~ .slider::before {
-    transform: translateX(30px); /* Ajustado de 50px */
+    transform: translateX(50px);
     background-color: var(--dark);
     box-shadow: none;
   }

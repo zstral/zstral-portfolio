@@ -4,10 +4,10 @@ import { TabsContext } from '../../context/tabsContext';
 import { AnimatePresence, motion } from "framer-motion";
 
 const fadeVariants = {
-  initial: { opacity: 0, y: 5, scale: 0.98 },
+  initial: { opacity: 0, y: 10, scale: 0.90 },
   animate: { opacity: 1, y: 0, scale: 1 },
-  exit: { opacity: 0, y: -10, scale: 0.98 },
-  transition: { duration: 0.3, ease: "easeInOut" },
+  exit: { opacity: 0, y: -30, scale: 0.98 },
+  transition: { duration: 0.22, ease: "easeInOut" },
 };
 
 const FadeInOut = ({ children }) => {

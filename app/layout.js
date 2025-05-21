@@ -10,8 +10,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className={`${roboto.className} flex justify-center items-center w-screen h-screen text-white antialiased`}>
+      <body className={`${roboto.className} text-white antialiased`}>
         {children}
       </body>
     </html>
